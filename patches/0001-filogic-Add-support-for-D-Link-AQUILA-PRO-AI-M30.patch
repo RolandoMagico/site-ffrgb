@@ -1,0 +1,28 @@
+From 914f0c81ebcc5f1408791ece36695624e7ea9726 Mon Sep 17 00:00:00 2001
+From: Roland Reinl <reinlroland+github@gmail.com>
+Date: Sun, 7 Apr 2024 22:17:00 +0200
+Subject: [PATCH] filogic: Add support for D-Link AQUILA PRO AI M30
+
+---
+ targets/mediatek-filogic | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/targets/mediatek-filogic b/targets/mediatek-filogic
+index 4b1a87c1..43495ffb 100644
+--- a/targets/mediatek-filogic
++++ b/targets/mediatek-filogic
+@@ -4,6 +4,11 @@ device('asus-tuf-ax4200', 'asus_tuf-ax4200', {
+ 	factory = false,
+ })
+ 
++-- D-Link
++
++device('d-link-aquila-pro-ai-m30-a1', 'dlink_aquila-pro-ai-m30-a1', {
++	factory = false,
++})
+ 
+ -- Cudy
+ 
+-- 
+2.34.1
+
