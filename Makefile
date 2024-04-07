@@ -67,6 +67,7 @@ gluon-update: | ${GLUON_BUILD_DIR}/.git
 
 gluon-prepare: gluon-update
 	make gluon-patch
+	cp patches/openwrt/* ${GLUON_BUILD_DIR}/patches/openwrt
 	ln -sfT .. ${GLUON_BUILD_DIR}/site
 	${GLUON_MAKE} update
 
