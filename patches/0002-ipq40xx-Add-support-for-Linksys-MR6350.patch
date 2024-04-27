@@ -1,0 +1,24 @@
+From 73fcd66cd11384242f0cedd8d9f83915dd3972c4 Mon Sep 17 00:00:00 2001
+From: Roland Reinl <reinlroland+github@gmail.com>
+Date: Sat, 27 Apr 2024 20:04:39 +0200
+Subject: [PATCH] ipq40xx: Add support for Linksys MR6350
+
+---
+ targets/ipq40xx-generic | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/targets/ipq40xx-generic b/targets/ipq40xx-generic
+index 068f538b..981ba302 100644
+--- a/targets/ipq40xx-generic
++++ b/targets/ipq40xx-generic
+@@ -73,6 +73,7 @@ device('gl.inet-gl-b1300', 'glinet_gl-b1300', {
+ 
+ device('linksys-ea6350v3', 'linksys_ea6350v3')
+ 
++device('linksys-mr6350', 'linksys_mr6350')
+ 
+ -- Meraki
+ 
+-- 
+2.34.1
+
