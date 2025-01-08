@@ -1,6 +1,6 @@
 GLUON_BUILD_DIR := gluon-build
-GLUON_GIT_URL := https://github.com/freifunk-gluon/gluon
-GLUON_GIT_REF := v2023.2.3
+GLUON_GIT_URL := https://github.com/RolandoMagico/gluon
+GLUON_GIT_REF := M60
 
 PATCH_DIR := ./patches
 
@@ -66,8 +66,6 @@ gluon-update: | ${GLUON_BUILD_DIR}/.git
 	cd ${GLUON_BUILD_DIR} && git clean -fd
 
 gluon-prepare: gluon-update
-	make gluon-patch
-	cp patches/openwrt/* ${GLUON_BUILD_DIR}/patches/openwrt
 	ln -sfT .. ${GLUON_BUILD_DIR}/site
 	${GLUON_MAKE} update
 
